@@ -30,6 +30,7 @@ echo "password : $3"
     fi
 
 #check if container is already created
+#
     check_status2=$(docker container ls -a -f name=jrvs-psql | wc -l)
       if [ "check_status2" == "1" ]; then
       echo"container has not been created"
