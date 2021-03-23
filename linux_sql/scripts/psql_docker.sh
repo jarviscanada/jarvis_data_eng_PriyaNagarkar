@@ -1,51 +1,59 @@
-#Script to create, start and stop docker-psql container
-#Declaration
+#!/bin/bash
+
+#Variable Declaration
 command=$1
 username=$2
 password=$3
-echo"Type command $1"
-echo "Username : $2"
-echo "password : $3"
-# check docker status, start if not running
-  systemctl status docker || systemctl start docker
-  docker pull postgres
 
-#create docker psql container
-  if [ "$1" == "create" ]; then
-    #check if container is already created
-    check_status=$(docker container ls -a -f name=jrvs-psql | wc -l)
-      if [ "$check_status" == "2" ]; then
-        echo "Container already created"
-        exit 1
-      fi
+#check docker status and if docker daemon is not running then start docker
+sudo systemctl status docker || system start docker
 
-    docker volume create pgdata
-    docker run --name jrvs-psql -e POSTGRES_PASSWORD=$password -d -v pgdata:/var/lib/postgresql/data -p 5432:5432 $username
-    exit 0
-  fi
-
-#check username and password
-    if [ "$2" == "" ] || [ "$3" == "" ]; then
-      echo "Invalid Username or Password"
+#validate arguments
+case $command in
+  create)
+    #check if the container already exists
+    if [ "$(docker container ls -a -f name=jrvs-psql | wc -l)" -eq 2 ]; then
+      echo "Container is already created"
+      exit 1
     fi
 
-#check if container is already created
-#
-    check_status2=$(docker container ls -a -f name=jrvs-psql | wc -l)
-      if [ "check_status2" == "1" ]; then
-      echo"container has not been created"
+    #validate username and password
+    if [ "$username" == "" ]  || [ "$password" == "" ] ; then
+      echo "No username or password entered"
       exit 1
-      fi
+    fi
 
-#start docker container
-  if [ "$1" == "start" ]; then
-    docker container start jarvis_psql
-    exit 0
-  fi
+    #create docker volume
+    docker volume create pgdata
 
-#stop docker container
-  if [ "$1" == "stop" ]; then
-    docker container stop jarvis_psql
-    exit 0
-  fi
+    #create psql container
+    docker run --name jrvs-psql -e POSTGRES_PASSWORD=${db_password} -e POSTGRES_USER=${db_username} -d -v pgdata:/var/lib/postgresql/data -p 5432:5432 postgres
+    exit $?
 
+    #check if the container exists
+    if [ "$(docker container ls -a -f name=jrvs-psql | wc -l)" -eq 1 ]; then
+      echo "Container was not created"
+      exit 1
+    fi
+
+  ;;
+
+  start)
+    #start the container
+    docker start jrvs-psql
+    exit $?
+  ;;
+
+  stop)
+    #stop the container
+    docker stop jrvs-psql
+    exit $?
+  ;;
+
+  *)
+    echo "Invalid arguments"
+    exit 1
+
+esac
+
+exit 0
