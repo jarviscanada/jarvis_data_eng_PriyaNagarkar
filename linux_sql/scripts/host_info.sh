@@ -13,7 +13,7 @@ if [ $# -ne 5 ]; then
 	exit 1
 fi
 
-#parse hardware specification
+#Parse hardware specification
 hostname=$(hostname -f)
 lscpu_out=$(lscpu)
 proc_mem_out=$(cat /proc/meminfo)
