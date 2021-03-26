@@ -13,6 +13,7 @@ export PGPASSWORD=$psql_password
 if [ "$#" -ne 5 ]; then
   echo "ERROR: Invalid number of parameters"
   exit 1
+
 fi
 
 vmstat_out=$(vmstat -t)
