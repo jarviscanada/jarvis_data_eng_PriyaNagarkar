@@ -20,7 +20,7 @@ SELECT
     round5(timestamp)
 FROM
     host_usage;
--- host_id, host_name, timestamp, avg_used_mem_percentage
+-- host-id, host_name, timestamp, avg_used_mem_percentage
 SELECT
     host_id,
     hi.hostname,
@@ -49,3 +49,4 @@ HAVING
         COUNT(*) < 3
 ORDER BY
     host_id;
+
