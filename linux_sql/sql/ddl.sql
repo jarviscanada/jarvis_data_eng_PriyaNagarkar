@@ -21,3 +21,4 @@ CREATE TABLE IF NOT EXISTS PUBLIC.host_usage (
     disk_io INT NOT NULL,
     disk_available INT NOT NULL,
     CONSTRAINT machine_id FOREIGN KEY(host_id)git  REFERENCES host_info(id)
+
