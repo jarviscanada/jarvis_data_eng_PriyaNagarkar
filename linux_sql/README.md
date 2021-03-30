@@ -5,26 +5,36 @@ The Linux Cluster Monitoring Agent (LCMA) is a tool designed to monitor and coll
 ## Quick Start
 - Provision a docker psql instance on host computer by executing psql_docker.sh.
 
+   ```
    bash ./scripts/psql_docker.sh create|start|stop [username] [password]
+   ```
    
 - Create tables which will contain the hardware specifications and resource usages using ddl.sql.
 
+   ```
    psql -h localhost -U [username] -d [database] -f sql/ddl.sql
+   ```
    
 - Collect and insert host device hardware info into the host_info table.
 
+   ```
    bash ./scripts/host_info.sh localhost 5432 [database] [username] [password]
+   ```
    
 - Collect and insert host device cpu/memory usage into the host_usage table.
 
+   ```
    bash ./scripts/host_usage.sh localhost 5432 [database] [username] [password]
+   ```
    
 - Automate the host_usage.sh script with crontab CLI tool.
 
+    ```
     Open crontab job file
     crontab -e
     Add this task to the list and save
      * * * * * bash [full_directory_path]/host_usage.sh localhost 5432 [database] [username] [password] > /tmp/host_usage.log
+     ```
     
 ## Implementation
 - A psql_docker.sh script creates a psql container using docker to host the postgreSQL database in the monitoring agent node where the other nodes are connected by switch through IPv4.
