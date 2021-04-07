@@ -126,8 +126,7 @@ public interface LambdaStreamExc {
      * Please use `createIntStream` and  `getLambdaPrinter` methods
      *e.g.
      * les.printOdd(lse.createIntStream(0,5), les.getLambdaPrinter("odd number:", "!"));
-     *
-     * sout:
+     *sout:
      * odd number:1!
      * odd number:3!
      * odd number:5!

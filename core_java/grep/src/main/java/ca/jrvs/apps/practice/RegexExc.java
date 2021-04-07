@@ -10,7 +10,7 @@ public interface RegexExc {
     public boolean matchJpeg(String filename);
 
     /**
-     * return true if ip is valid
+     * return true if ip is valid,
      * to simplify the problem, IP address range is from 0.0.0.0. to 999.999.999.999
      * @param ip
      * @return

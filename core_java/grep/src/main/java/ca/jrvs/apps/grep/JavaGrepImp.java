@@ -119,7 +119,7 @@ public class JavaGrepImp implements JavaGrep{
         if(args.length != 3){
             throw new IllegalArgumentException("USAGE: JavaGrep regex rootPath outFile");
         }
-        //use default logger config
+        //use default logger config:
         BasicConfigurator.configure();
 
         JavaGrepImp javaGrepImp = new JavaGrepImp();
