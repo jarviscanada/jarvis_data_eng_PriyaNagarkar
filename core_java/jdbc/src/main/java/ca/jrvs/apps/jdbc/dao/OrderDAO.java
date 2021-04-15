@@ -127,7 +127,7 @@ public class OrderDAO extends DataAccessObject<Order> {
             }
         }catch(SQLException e){
             logger.error("ERROR: GET ORDER FOR CUSTOMER");
-            throw new RuntimeException(e);
+            throw new RuntimeException("GET ORDER FOR CUSTOMER",e);
         }
         return orders;
     }
