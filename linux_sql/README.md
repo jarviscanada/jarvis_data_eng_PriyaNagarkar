@@ -1,3 +1,4 @@
+
 # Linux Cluster Monitoring Agent
 ## Introduction
 The Linux Cluster Monitoring Agent (LCMA) is a tool designed to monitor and collect data from host machines over a network using IPv4 addresses; this includes hardware specifications, activity, and performance of Linux machines within a cluster. This data is stored in a PostgreSQL (psql) Relational Database Management System (RDBMS) and uses Docker containers. Docker is used to keep consistency between nodes/ servers.  All the nodes in the cluster have the bash scripts which collects the hardware specifications and usage data and sends it to the database; the CPU usage data is sent every one minute which is scheduled using crontab to get the real time data for real time analysis. The collected data is used to provide statistics for better business decisions and resource planning. 
@@ -93,7 +94,3 @@ host_usage Table
 ## Improvements
 - Add GUI so that resource utilization will be easy to interpret. 
 - Set up varying threshold values according to issue severity.
-<<<<<<< HEAD
-=======
-
->>>>>>> master
