@@ -12,6 +12,7 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.util.EntityUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -40,7 +41,7 @@ public class TwitterHttpHelper implements HttpHelper {
                              String tokenSecret) {
         consumer = new CommonsHttpOAuthConsumer(consumerKey, consumerSecret);
         consumer.setTokenWithSecret(accessToken, tokenSecret);
-        httpClient = new DefaultHttpClient();
+        httpClient = HttpClientBuilder.create().build();
     }
 
     public TwitterHttpHelper() {
@@ -50,7 +51,7 @@ public class TwitterHttpHelper implements HttpHelper {
         String tokenSecret = System.getenv("tokenSecret");
         consumer = new CommonsHttpOAuthConsumer(consumerKey, consumerSecret);
         consumer.setTokenWithSecret(accessToken, tokenSecret);
-        httpClient = new DefaultHttpClient();
+        httpClient = HttpClientBuilder.create().build();
     }
 
     public static void main(String[] args) throws Exception {

@@ -6,6 +6,7 @@ import oauth.signpost.OAuthConsumer;
 import oauth.signpost.commonshttp.CommonsHttpOAuthConsumer;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.util.EntityUtils;
@@ -25,7 +26,7 @@ public class TwitterApiTest {
         consumer.setTokenWithSecret(ACCESS_TOKEN, TOKEN_SECRET);
 
         //create an HTTP GET request
-        String status = "today is a good day";
+        String status = "WOW";
         PercentEscaper percentEscaper = new PercentEscaper("",false);
         HttpPost request = new HttpPost(
                 "https://api.twitter.com/1.1/statuses/update.json?status=" + percentEscaper.escape(status)
