@@ -61,8 +61,8 @@ public class TwitterControllerIntTest {
 
         assertNotNull(postedTweet.getCoordinates());
         assertEquals(2, postedTweet.getCoordinates().getCoordinates().size());
-        assertEquals(Double.valueOf(1), postedTweet.getCoordinates().getCoordinates().get(0));
-        assertEquals(Double.valueOf(-1), postedTweet.getCoordinates().getCoordinates().get(1));
+        assertEquals(Double.valueOf(-1), postedTweet.getCoordinates().getCoordinates().get(0));
+        assertEquals(Double.valueOf(1), postedTweet.getCoordinates().getCoordinates().get(1));
     }
 
     @Test
