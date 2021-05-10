@@ -1,27 +1,21 @@
 {
   "education": [
     {
-      "awards_achievements": [
-        "CGPA - 3.4/4"
-      ],
+      "awards_achievements": null,
       "degree": "Wireless Networking (Ontario Graduate Certificate)",
       "department": "Electrical and Computer Engineering",
       "duration": "(Jan 2020 - Dec 2020)",
       "school_name": "George Brown College, Toronto ON "
     },
     {
-      "awards_achievements": [
-        "CGPA - 8.5/10"
-      ],
+      "awards_achievements": null,
       "degree": "Masters in Electronics \u0026 Communication Engineering",
       "department": "Electrical and Computer Engineering",
       "duration": "(July 2013 - June 2015)",
       "school_name": "Gujarat Technological University"
     },
     {
-      "awards_achievements": [
-        "CGPA - 7.5/10"
-      ],
+      "awards_achievements": null,
       "degree": "Bachelors in Electronics and Communication Engineering",
       "department": "Electrical and Computer Engineering",
       "duration": "(June 2009 - June 2013) ",
@@ -75,29 +69,9 @@
       "name": "Core Java Apps"
     },
     {
-      "description": "Pending",
-      "git_url": "/springboot",
-      "name": "Springboot App"
-    },
-    {
-      "description": "Pending",
+      "description": "Data analytics on Sales data via using Python, JupyterNotebook, Pandas, NumPy, Matplotlib and so on. The project contains two parts, the data warehouse and notebook. Docker deploys them both separately. The JupyterNotebook analytics and visualize the monthly growth and the distribution of different customers. Also, used RFM and segmentations to the group and tag customers to analyze the target group and digging some potential marketing.",
       "git_url": "/python_data_anlytics",
       "name": "Python Data Analytics"
-    },
-    {
-      "description": "Pending",
-      "git_url": "/hadoop",
-      "name": "Hadoop"
-    },
-    {
-      "description": "Pending",
-      "git_url": "/spark",
-      "name": "Spark"
-    },
-    {
-      "description": "Pending",
-      "git_url": "/cloud_devops",
-      "name": "Cloud/DevOps"
     }
   ],
   "name": "Priya Nagarkar",
@@ -120,7 +94,7 @@
       "company": "Jarvis Consulting Group",
       "description": "Utilizing Java as the primary development language, the experience has allowed me to delve into Java fundamentals and it's core applications. - Multiple projects introduced concepts that assimilated Java with SQL and Bash, granting in-depth knowledge of software integration and testing - Each project introduced critical development concepts like Git/GitFlow and Agile/Scrum.",
       "duration": "(2021-Present)",
-      "title": "Software Developer"
+      "title": "Data Engineer"
     },
     {
       "company": "N.D Enterprise ",
@@ -158,5 +132,5 @@
       "Git/Gitflow"
     ]
   },
-  "summary": "I am a graduate from George Brown College. I have four years of technical working experience. I worked as an Junior Engineer, major job responsibilites include PLC-SCADA programming. I am working as an Data Engineer at Jarvis. I have familiarized myself with the core concepts of the subject and have gained valuable practice in using software that is prevalent in the industry. Furthermore, soft skills like interpersonal communication and diverse collaboration have been proven through various professional development experiences. I am seeking to utilize the practical and analytical knowledge developed in personal projects and academia to leverage a challenging career path in the field of data engineering I am a team-oriented person, and problem solver. I enjoy coding challenges and learning algorithms and data structures. Currently, I am looking for a great team to provide my skills and learn new tech skills."
+  "summary": "I am a recent graduate from George Brown College's Wireless Networking program. This program covered programming theory, practical applications, computer networking concepts and applications, and systems design. I have four years of technical working experience as a Junior Engineer.  My primary responsibilities include PLC-SCADA programming and Team Collaboration, these helped me boost my communication and leadership skills. Between my education and my work experience, I have built up a wide knowledge base and learned how to quickly teach myself new concepts, which I believe makes me a perfect fit for the Data Engineering industry. I'm also interested in the potential crossover between Data Engineering and other fields, both inside and outside the IT sphere, since a little external domain knowledge can go a long way in creating new solutions. I am working as a Data Engineer at Jarvis. I have familiarized myself with the core concepts of the subject and have gained valuable practice in using software that is prevalent in the industry."
 }

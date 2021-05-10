@@ -4,12 +4,7 @@ name: "Priya Nagarkar"
 github_repo_root_url: https://github.com/jarviscanada/jarvis_data_eng_Priya
 
 # Introduce yourself, your academic and professional background.
-summary: "I am a graduate from George Brown College. I have four years of technical working experience.
-I worked as an Junior Engineer, major job responsibilites include PLC-SCADA programming.
-I am working as an Data Engineer at Jarvis. I have familiarized myself with the core concepts of the subject and have gained valuable practice in using software that is prevalent in the industry.
-Furthermore, soft skills like interpersonal communication and diverse collaboration have been proven through various professional development experiences.
-I am seeking to utilize the practical and analytical knowledge developed in personal projects and academia to leverage a challenging career path in the field of data engineering I am a team-oriented person, and problem solver. I enjoy coding challenges and learning algorithms and data structures.
- Currently, I am looking for a great team to provide my skills and learn new tech skills."
+summary: "I am a recent graduate from George Brown College's Wireless Networking program. This program covered programming theory, practical applications, computer networking concepts and applications, and systems design. I have four years of technical working experience as a Junior Engineer.  My primary responsibilities include PLC-SCADA programming and Team Collaboration, these helped me boost my communication and leadership skills. Between my education and my work experience, I have built up a wide knowledge base and learned how to quickly teach myself new concepts, which I believe makes me a perfect fit for the Data Engineering industry. I'm also interested in the potential crossover between Data Engineering and other fields, both inside and outside the IT sphere, since a little external domain knowledge can go a long way in creating new solutions. I am working as a Data Engineer at Jarvis. I have familiarized myself with the core concepts of the subject and have gained valuable practice in using software that is prevalent in the industry."
 ## What excites you about the software industry and your passion. At least 80 words
 #summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis a orci ac malesuada. Vivamus ligula elit, viverra eu ante porttitor, blandit convallis augue. Aliquam justo justo, mollis at lacus eu, rutrum finibus est. Vestibulum venenatis purus id accumsan pretium. In efficitur magna nec enim laoreet tincidunt. Ut libero metus, scelerisque nec eros vitae, sagittis pellentesque enim. Donec dictum felis volutpat, vehicula magna eu, imperdiet elit. Phasellus ut velit a massa efficitur faucibus. Sed volutpat, lacus sed sagittis luctus, elit.
 
@@ -50,21 +45,21 @@ jarvis_projects:
     description: "Grep App -Utilizes the Stream API and Lambda expressions to replicate the grep command used in bash within Java.
     JDBC App - Initiated the use of JDBC and design patterns such as DAOs.
     Twitter App - Works with the Twitter API to allow simple CRUD operations. The project follows the MVC architecture and is tested with JUnit and Mockito"
-  - name: "Springboot App"
-    git_url: "/springboot"
-    description: "Pending"
+  #- name: "Springboot App"
+   # git_url: "/springboot"
+   # description: "Pending"
   - name: "Python Data Analytics"
     git_url: "/python_data_anlytics"
-    description: "Pending"
-  - name: "Hadoop"
-    git_url: "/hadoop"
-    description: "Pending"
-  - name: "Spark"
-    git_url: "/spark"
-    description: "Pending"
-  - name: "Cloud/DevOps"
-    git_url: "/cloud_devops"
-    description: "Pending"
+    description: "Data analytics on Sales data via using Python, JupyterNotebook, Pandas, NumPy, Matplotlib and so on. The project contains two parts, the data warehouse and notebook. Docker deploys them both separately. The JupyterNotebook analytics and visualize the monthly growth and the distribution of different customers. Also, used RFM and segmentations to the group and tag customers to analyze the target group and digging some potential marketing."
+  #- name: "Hadoop"
+   # git_url: "/hadoop"
+   # description: "Pending"
+  #- name: "Spark"
+   # git_url: "/spark"
+   # description: "Pending"
+  #- name: "Cloud/DevOps"
+   # git_url: "/cloud_devops"
+   # description: "Pending"
 
 # List of personal or academic projects
 # Feel free to add more projects?
@@ -101,7 +96,7 @@ highlighted_projects:
 #The job description allows hiring managers to understand your job and the technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
 #The description must be more than 25 words. If your experience is not software related, please focus on soft skills and achievements (e.g. team collaboration, problem-solving, improvements, communication).
 professional_experience:
-- title: "Software Developer"
+- title: "Data Engineer"
   company: "Jarvis Consulting Group"
   duration: "(2021-Present)"
   description: "Utilizing Java as the primary development language, the experience has allowed me to delve into Java fundamentals and it's core applications.
@@ -129,17 +124,17 @@ education:
   school_name: "George Brown College, Toronto ON "
   duration: "(Jan 2020 - Dec 2020)"
   department: "Electrical and Computer Engineering"
-  awards_achievements: ["CGPA - 3.4/4"]
+  awards_achievements:
 - degree: "Masters in Electronics & Communication Engineering"
   school_name: "Gujarat Technological University"
   duration: "(July 2013 - June 2015)"
   department: "Electrical and Computer Engineering"
-  awards_achievements: ["CGPA - 8.5/10"]
+  awards_achievements:
 - degree: "Bachelors in Electronics and Communication Engineering"
   school_name: "Gujarat Technological University"
   duration: "(June 2009 - June 2013) "
   department: "Electrical and Computer Engineering"
-  awards_achievements: ["CGPA - 7.5/10"]
+  awards_achievements:
  # - school_name: "XYZ university"
   #  duration: "2012-2016"
    # degree: "Bachelor of Applied Sciences"
@@ -158,12 +153,12 @@ education:
 #Optional section
 others:
 - title: "Published Papers"
-  bullets: ["- Published a paper in IEEE transactions on intelligent transportation systems, ?Road sign Detection  and recognition based on support vector machines
-  - Published a paper in STM journals, An algorithm for road sign detection and recognition using  HOG and SVM"]
+  bullets: [ "- Published a paper in IEEE transactions on intelligent transportation systems, ?Road sign Detection  and recognition based on support vector machines
+             - Published a paper in STM journals, An algorithm for road sign detection and recognition using  HOG and SVM" ]
 - title: "Workshop"
-  bullets: ["- Attended workshop for design engineering and achieved the certificate from Gujarat Technological   University
-  - Attended workshop for energy conservation awareness and achieved certificate from Gujarat Energy Development Agency"]
-    #category
+  bullets: [ "- Attended workshop for design engineering and achieved the certificate from Gujarat Technological   University
+             - Attended workshop for energy conservation awareness and achieved certificate from Gujarat Energy Development Agency" ]
+  #category
  # - title: "Certificates"
     #list of items
   #  bullets:
