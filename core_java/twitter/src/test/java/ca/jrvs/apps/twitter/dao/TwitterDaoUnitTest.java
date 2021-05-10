@@ -47,7 +47,7 @@ public class TwitterDaoUnitTest {
 
         String tweetJsonStr = "{\n"
                 + "  \"created_at\":\"Mon Feb 18 21:24:39 +0000 2019\",\n"
-                + "  \"id\":1097607853932564480,\n"
+                + "  \"id\":1382786628561735681,\n"
                 + "  \"id_str\":\"1097607853932564480\",\n"
                 + "  \"text\":\"test with location\",\n"
                 + "  \"entities\":{\n"
@@ -88,12 +88,13 @@ public class TwitterDaoUnitTest {
                 + "  \"favorited\":false,\n"
                 + "  \"retweeted\":false\n"
                 + "}";
+        String id = "1382786628561735681";
 
         TwitterDao spyDao = Mockito.spy(dao);
         Tweet expectedTweet = JsonUtil.toObjectFromJson(tweetJsonStr, Tweet.class);
 
         doReturn(expectedTweet).when(spyDao).parseResponseBody(any(), anyInt());
-        Tweet tweet = spyDao.findById("1097607853932564480");
+        Tweet tweet = spyDao.findById("1382786628561735681");
         assertNotNull(tweet);
         assertNotNull(tweet.getText());
     }
@@ -115,16 +116,17 @@ public class TwitterDaoUnitTest {
                 + "  \"favorited\":false,\n"
                 + "  \"retweeted\":false\n"
                 + "}";
+        String id = "1382786628561735681";
 
         when(mockHelper.httpPost(isNotNull())).thenReturn(null);
         TwitterDao spyDao = Mockito.spy(dao);
         Tweet expectedTweet = JsonUtil.toObjectFromJson(tweetJsonStr, Tweet.class);
 
         doReturn(expectedTweet).doReturn(null).when(spyDao).parseResponseBody(any(), anyInt());
-        Tweet tweet = spyDao.deleteById("1097607853932564480");
+        Tweet tweet = spyDao.deleteById("1382786628561735681");
         assertNotNull(tweet);
         assertNotNull(tweet.getText());
-        tweet = spyDao.deleteById("1097607853932564480");
+        tweet = spyDao.deleteById( "1382786628561735681");
         assertNull(tweet);
     }
 
