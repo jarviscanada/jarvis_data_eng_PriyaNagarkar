@@ -1,0 +1,136 @@
+{
+  "education": [
+    {
+      "awards_achievements": null,
+      "degree": "Wireless Networking (Ontario Graduate Certificate)",
+      "department": "Electrical and Computer Engineering",
+      "duration": "(Jan 2020 - Dec 2020)",
+      "school_name": "George Brown College, Toronto ON "
+    },
+    {
+      "awards_achievements": null,
+      "degree": "Masters in Electronics \u0026 Communication Engineering",
+      "department": "Electrical and Computer Engineering",
+      "duration": "(July 2013 - June 2015)",
+      "school_name": "Gujarat Technological University"
+    },
+    {
+      "awards_achievements": null,
+      "degree": "Bachelors in Electronics and Communication Engineering",
+      "department": "Electrical and Computer Engineering",
+      "duration": "(June 2009 - June 2013) ",
+      "school_name": "Gujarat Technological University"
+    }
+  ],
+  "github_repo_root_url": "https://github.com/jarviscanada/jarvis_data_eng_Priya",
+  "highlighted_projects": [
+    {
+      "description": "Designed setup for International students helping them to find basic necessities options at one place. Established 5 lifecycle stages and guidelines for successful implementation.",
+      "name": "ITIL"
+    },
+    {
+      "description": "Blocked attack from one virtual machine to another using Kali.",
+      "name": "IPSEC "
+    },
+    {
+      "description": "Designed web application using Ansible and installed SIEM server to monitor same.",
+      "name": "Azure"
+    },
+    {
+      "description": "Network design and implementation of college. Network allocation to different cluster",
+      "name": "Cisco packet Tracer"
+    },
+    {
+      "description": "This project will help user find a solution to any solvable Sudoku puzzle using backtracking algorithm.",
+      "name": "Python"
+    },
+    {
+      "description": " Designed library management system, to track book records including books given, books received, deadline to receive and fine charged for late submission.",
+      "name": "Visual basic"
+    },
+    {
+      "description": " Designed a system which studies and sense soil moisture. According to the reading it will turn water sprinkler on and off.",
+      "name": "Microcontroller"
+    },
+    {
+      "description": " Developed a program in matlab using image capturing technology, to monitor and capture traffic signs. It detects and recognizes traffic signs well in advance and provide output to driver. I used Support Vector Machine and Histogram of Oriented Gradients in this project.",
+      "name": "Matlab"
+    }
+  ],
+  "jarvis_projects": [
+    {
+      "description": "Implemented a Linux cluster monitoring agent that records the hardware specification of each host machine and monitors their memory usage in real-time. The project was primarily developed using bash scripts that are integrated with the PostgreSQL database. Using Docker for containerization, the end product is light-weight, versatile, and easy to use.",
+      "git_url": "/linux_sql",
+      "name": "Cluster Monitor"
+    },
+    {
+      "description": "Grep App -Utilizes the Stream API and Lambda expressions to replicate the grep command used in bash within Java. JDBC App - Initiated the use of JDBC and design patterns such as DAOs. Twitter App - Works with the Twitter API to allow simple CRUD operations. The project follows the MVC architecture and is tested with JUnit and Mockito",
+      "git_url": "/core_java",
+      "name": "Core Java Apps"
+    },
+    {
+      "description": "Data analytics on Sales data via using Python, JupyterNotebook, Pandas, NumPy, Matplotlib and so on. The project contains two parts, the data warehouse and notebook. Docker deploys them both separately. The JupyterNotebook analytics and visualize the monthly growth and the distribution of different customers. Also, used RFM and segmentations to the group and tag customers to analyze the target group and digging some potential marketing.",
+      "git_url": "/python_data_anlytics",
+      "name": "Python Data Analytics"
+    }
+  ],
+  "name": "Priya Nagarkar",
+  "others": [
+    {
+      "bullets": [
+        "- Published a paper in IEEE transactions on intelligent transportation systems, ?Road sign Detection  and recognition based on support vector machines - Published a paper in STM journals, An algorithm for road sign detection and recognition using  HOG and SVM"
+      ],
+      "title": "Published Papers"
+    },
+    {
+      "bullets": [
+        "- Attended workshop for design engineering and achieved the certificate from Gujarat Technological   University - Attended workshop for energy conservation awareness and achieved certificate from Gujarat Energy Development Agency"
+      ],
+      "title": "Workshop"
+    }
+  ],
+  "professional_experience": [
+    {
+      "company": "Jarvis Consulting Group",
+      "description": "Utilizing Java as the primary development language, the experience has allowed me to delve into Java fundamentals and it's core applications. - Multiple projects introduced concepts that assimilated Java with SQL and Bash, granting in-depth knowledge of software integration and testing - Each project introduced critical development concepts like Git/GitFlow and Agile/Scrum.",
+      "duration": "(2021-Present)",
+      "title": "Data Engineer"
+    },
+    {
+      "company": "N.D Enterprise ",
+      "description": "Development of PLC logic program -Designing SCADA based application screens -Explanation of project and services to client -Oversee production efforts to guarantee that projects are completed in a timely manner.",
+      "duration": "Jan 18 - Dec 19",
+      "title": "Electronics Engineer"
+    },
+    {
+      "company": "N.D Enterprise",
+      "description": "Provided Desktop support related to hardware, software (deployed and updated software) - Performed troubleshooting to system failures and identify the bottleneck of the problem. - Provided Tier 1 technical support to users and respond to trouble tickets. - Solved basic troubleshooting problems including password reset, Backup and other issues. -Understood the fundamentals of networking, including the OSI model, network segmentation best practices, routing, and common protocols and concepts.",
+      "duration": "Aug 15 - Dec 17",
+      "title": "Technical Support Engineer"
+    }
+  ],
+  "skills": {
+    "competent": [
+      "JavaScript",
+      "Docker",
+      "Matlab",
+      "PLC/Scada",
+      "Algorithm and Data structure"
+    ],
+    "familiar": [
+      "Python",
+      "C",
+      "Assembly",
+      "Google Cloud Platform",
+      "Computer Networking"
+    ],
+    "proficient": [
+      "Java",
+      "Linux/Bash",
+      "RDBMS/SQL",
+      "Agile/Scrum",
+      "Git/Gitflow"
+    ]
+  },
+  "summary": "I am a recent graduate from George Brown College's Wireless Networking program. This program covered programming theory, practical applications, computer networking concepts and applications, and systems design. I have four years of technical working experience as a Junior Engineer.  My primary responsibilities include PLC-SCADA programming and Team Collaboration, these helped me boost my communication and leadership skills. Between my education and my work experience, I have built up a wide knowledge base and learned how to quickly teach myself new concepts, which I believe makes me a perfect fit for the Data Engineering industry. I'm also interested in the potential crossover between Data Engineering and other fields, both inside and outside the IT sphere, since a little external domain knowledge can go a long way in creating new solutions. I am working as a Data Engineer at Jarvis. I have familiarized myself with the core concepts of the subject and have gained valuable practice in using software that is prevalent in the industry."
+}
